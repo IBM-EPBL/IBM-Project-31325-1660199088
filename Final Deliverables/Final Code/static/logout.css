@@ -1,0 +1,27 @@
+body{
+
+text-align:center;
+background-image: url("Screenshot (134).png");
+}
+
+h1{
+font-family:georgian;
+text-align:center;
+background-color:rgb(74, 34, 83);
+border-radius:20px;
+color:white;
+}
+
+a{
+text-decoration:None;
+}
+
+a:hover{
+color:black;
+}
+
+p{
+font-size:20px;
+font-family:Arvo;
+color: aliceblue;
+}

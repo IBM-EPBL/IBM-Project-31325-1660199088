@@ -1,0 +1,243 @@
+body{
+/*border-radius:20px;
+border: 1px solid black;*/
+
+
+background-image: url("Screenshot\ \(134\).png");
+}
+
+h1{
+font-family:georgian;
+text-align:center;
+border-radius:20px;
+color:white;
+background-color:rgb(74, 34, 83);
+}
+
+
+li {
+  display: inline;
+}
+
+a{
+text-decoration:None;
+}
+
+nav{
+  padding:10px 10px 10px 10px;
+  border-top-right-radius:20px;
+  border-top-left-radius:20px;
+  text-align:center;
+  color:white;
+  
+  }
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    li {
+      display: inline;
+    }
+  a{
+  text-decoration:None;
+  }
+  .nav {
+      height: 50px;
+      width: 100%;
+      background-color:rgb(74, 34, 83);
+      position: relative;
+    }
+    
+    .nav > .nav-header {
+      display: inline;
+    }
+    
+    .nav > .nav-header > .nav-title {
+      display: inline-block;
+      font-size: 22px;
+      color: #fff;
+      padding: 10px 10px 10px 10px;
+    }
+    
+    .nav > .nav-btn {
+      display: none;
+    }
+    
+    .nav > .nav-links {
+      display: inline;
+      float: right;
+      font-size: 18px;
+    }
+    
+    .nav > .nav-links > a {
+      display: inline-block;
+      padding: 13px 10px 13px 10px;
+      text-decoration: none;
+      color: #efefef;
+    }
+    
+    .nav > .nav-links > a:hover {
+      background-color: rgba(236, 17, 203, 0.3);
+    }
+    
+    .nav > #nav-check {
+      display: none;
+    }
+    
+    @media (max-width:600px) {
+      .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        background-color: #8766664d;
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: rgb(188, 15, 227);
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+      }
+      .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+      }
+    }
+  
+form{
+background-color:#ECF0F1;
+padding:20px 20px 20px 20px;
+border:1px solid black;
+text-align:center;
+width:30%;
+display:inline-block;
+}
+
+input{
+width:100%;	
+padding:10px 10px 10px 10px;
+box-sizing:border-box;
+}
+
+form #submit{
+width:98.5%;
+border-radius:20px;
+float:right;
+}
+
+#submit:hover{
+background-color:blueviolet;
+
+color:white;
+font-size:15px;
+}
+
+p{
+font-size:20px;
+font-family:Arvo;
+}
+
+.box-form .right .inputs {
+    overflow: hidden;
+}
+
+.box-form .right input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #B0B3B9;
+}
+
+/*
+.box-form .right .remember-me--forget-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}*/
+
+input[type="text"]:focus:invalid,
+input[type="password"]:focus:invalid {
+    color: #cc1e2b;
+    border-color: #cc1e2b;
+}
+
+input[type="text"]:valid ~ .validation span,
+input[type="email"]:valid ~ .validation span {
+  background: #0C0;
+  position: absolute;
+  border-radius: 6px;
+}
+input[type="text"]:valid ~ .validation span:first-child,
+input[type="email"]:valid ~ .validation span:first-child {
+  top: 30px;
+  left: 14px;
+  width: 20px;
+  height: 3px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+input[type="text"]:valid ~ .validation span:last-child,
+input[type="email"]:valid ~ .validation span:last-child {
+  top: 35px;
+  left: 8px;
+  width: 11px;
+  height: 3px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.validation {
+  display: none;
+  position: absolute;
+  content: " ";
+  height: 60px;
+  width: 30px;
+  right: 15px;
+  top: 0px;
+}
+
+ input[type=checkbox] {
+     vertical-align: middle;
+     position: relative;
+     bottom: 1px;
+ }
+
+ label {
+     display: block;
+ }
+   
+
+check{
+text-align: right;
+word-wrap:normal;}
