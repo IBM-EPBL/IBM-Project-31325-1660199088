@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title> PREDICTION PAGE </title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='prediction.css')}}">
+</head>
+
+<body background ="{{ url_for('static',filename='Screenshot (134).png')}}" class="box-form">
+
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Diabetic Retinopathy
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html" >Home</a>
+
+          <a href="logout.html" >Logout</a>
+
+        </div>
+      </div>
+
+<div style="text-align: center;padding-top: 70px;">
+<form action="/prediction" method="post" enctype="multipart/form-data">
+    <input type="file" name="image">
+    <input type="submit">
+  </form>
+</div>
+
+<h1 style="padding-top: 10px;padding-bottom:5px;background-color: rgb(74, 34, 83);">Diabetic Retinopathy Classification is : {{prediction}}</h1>
+
+
+<img style="padding-left: 280px;"src="{{ url_for('static',filename='prediction.jpeg')}}" height="480px" width="950px" alt="this is a image">
+
+
+</body>
+</html>
