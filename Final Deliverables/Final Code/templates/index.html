@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+  <div class="bg"></div>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title> INDEX PAGE </title>
+<link rel="stylesheet" href="{{ url_for('static',filename='index.css')}}">
+</head>
+<div class="bg"></div>
+<body background = "{{ url_for('static',filename='poly_purple.jpg')}}" class="box-form">
+
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Diabetic Retinopathy
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a href="index.html" >Home</a>
+          <a href="login.html" >Login</a>
+          <a href="register.html" >Register</a>
+
+        </div>
+      </div>
+<div>
+<article style="text-align:center;">
+<img style="width: 800px; height: 500px;" src="{{url_for('static',filename='index.jpeg')}}";alt="this is a image">
+
+<h2 style="background-color: rgb(61, 3, 72);"> ABOUT PROJECT </h2>
+<div style="background-color: rgb(74, 34, 83);"class="left">
+<h3> PROBLEM</h3>
+<p >
+Diabetic Retinopathy is one of the emerging diseases which is the reason for blindness.Dr mutilates the retinal blood vessels of a patint having diabetes.
+Diabetic Retinopathy(DR) is an ophthalmic disease that damages retinal blood vessels.DR causes imperfect vision and may cause blindness if it is not diagnosed in earle stages.Early detection of Diabetic Retinopathy includes the identification of microaneurysms and hemorrhages.Because the signs and symptoms of Diabetic Retinopathy are typically not present during first stage of the disease, it can often go undiagnosed until the damage to vision has occured.Existing methods are lacking in the earlier detection.Because preprocessing technique used in those methods are not effective to analyze such smaller features(nearly 10 microns to 100 microns).
+</p>
+</div>
+
+<div style="background-color: rgb(74, 34, 83);"class="right">
+<h3>SOLUTION </h3>
+<p>
+We opt to use multi-layer neural networks as deep NN.Due to the fact that the data is image, the best type of neural network satisfying our goal is Convolutioal Neural Networks.As we have to do for the most of the data, normalization plays an important role in our process.Before doing any tasks, preprocessing images(our dataset) is highly recommended.Consequently better accuracy will be achieved by preprocessing data.After preprocessing and normalizing, the prepared dataset could be used as input to our deep Convolutional Neural Network.Then deep NN will run and fit to our data and the result will be produced by that.This report will cover step by step how this deep Convolutional Neural Network be implemented.
+</p>
+</div>
+
+</article></div>
+
+</body>
+
+</html>
