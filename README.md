@@ -1,10 +1,10 @@
 # IBM-Project-31325-1660199088
 
-TEAM ID : PNT2022TMID23190
+# TEAM ID : PNT2022TMID23190
 
-Project Title : 💊 Deep Learning Fundus Image Analysis for Early Detection of Diabetic Retinopathy 
+# Project Title : Deep Learning Fundus Image Analysis for Early Detection of Diabetic Retinopathy 
 
-Faculty Mentor Name : Mr.V.Karthick
+# Faculty Mentor Name : Mr.V.Karthick
 
 
  # <b>Category </b> : Artificial Intelligence  
